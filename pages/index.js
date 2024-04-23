@@ -8,6 +8,21 @@ const heroProps = {
   ctaText: "Start",
 };
 
+const bulletPointsProps = [
+  {
+      title: 'lorem ipsum',
+      text: 'lorem ipsum'
+  },
+  {
+      title: 'lorem ipsum',
+      text: 'lorem ipsum'
+  },
+  {
+      title: 'lorem ipsum',
+      text: 'lorem ipsum'
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -21,7 +36,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        <Card />
+        <Card bulletPointsProps={bulletPointsProps} />
       </div>
     </>
   );

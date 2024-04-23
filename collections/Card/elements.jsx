@@ -18,4 +18,4 @@ export const StyledImage = styled(({ ...props }) => <Image {...props} src={video
     margin-left: 50px;
 `;
 
-export const StyledBulletPoints = styled(({ ...props }) => <div {...props} />)``;
+export const StyledBulletPoints = styled(({ ...bulletPointsProps }) => <div {...bulletPointsProps} />)``;
