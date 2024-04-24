@@ -3,10 +3,9 @@ import { StyledBackgroundImage } from "../../components/Images/BackgroundImage/e
 
 export const StyledImageAndBulletPoints = styled.div`
     @media (max-width: 1024px) {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     background-image: url(${StyledBackgroundImage});
     position: relative;
@@ -16,9 +15,10 @@ export const StyledImageAndBulletPoints = styled.div`
 
 export const StyledBulletPoints = styled((props) => <div {...props} />)`
     @media (max-width: 1024px) {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
     }
     display: flex;
     flex-direction: column;
