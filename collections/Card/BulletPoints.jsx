@@ -30,7 +30,7 @@ export const BulletPoints = () => {
 
   return (
       <StyledBulletPoints>
-        {bulletPoints.map((bulletPoint, index) => (
+        {bulletPoints.map((bulletPoint) => (
           <BulletPointSection> 
             <Image src={bulletPoint.icon} width={130} height={130}/>
             <BulletPointText>
@@ -40,6 +40,5 @@ export const BulletPoints = () => {
           </BulletPointSection>
         ))}
       </StyledBulletPoints>
-
   );
 };
