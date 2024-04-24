@@ -35,6 +35,13 @@ export const StyledBulletPointSection = styled((props) => <div {...props} />)`
 `;
 
 export const StyledBulletPointText = styled((props) => <div {...props} />)`
-    width: 290px;
+    width: 310px;
     margin-left: 50px;
+`;
+
+export const StyledIcon = styled((props) => <div {...props} />)`
+    width: 80px;
+    height: 80px;
+    margin-left: 35px;
+    margin-top: 35px;
 `;
