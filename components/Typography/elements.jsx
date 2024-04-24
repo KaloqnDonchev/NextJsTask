@@ -10,6 +10,8 @@ export const StyledSectionBigHeading = styled(forwardRef((props, ref) => <h1 {..
 `;
 
 export const StyledSectionHeading = styled(forwardRef((props, ref) => <h2 {...props} ref={ref} />))`
+  margin-bottom: 0;
+  text-align: center;
   font-family: Poppins;
   font-size: 2.5rem;
   line-height: 4.375rem;
@@ -17,6 +19,9 @@ export const StyledSectionHeading = styled(forwardRef((props, ref) => <h2 {...pr
 `;
 
 export const StyledSectionSubheading = styled(forwardRef((props, ref) => <h3 {...props} ref={ref} />))`
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-align: center;
   font-family: Poppins;
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -27,7 +32,7 @@ export const StyledSectionInnerHeading = styled(forwardRef((props, ref) => <h4 {
   font-family: Poppins;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 300;
+  font-weight: 500;
 `;
 
 export const StyledSectionTinyHeading = styled(forwardRef((props, ref) => <h5 {...props} ref={ref} />))`

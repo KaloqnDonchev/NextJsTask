@@ -6,6 +6,10 @@ import { BackgroundImage } from "../../components/Images/BackgroundImage";
 import { BulletPoints } from "../../collections/Card/BulletPoints";
 
 export const AgencySelection = (props) => {
+    const centeredHeading = {
+        textAlign: "center",
+    }
+
     return (
         <>
             <SectionHeading>Managed agency selection</SectionHeading>
