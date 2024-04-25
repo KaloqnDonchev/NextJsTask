@@ -43,8 +43,6 @@ export const StyledBulletPointText: StyledComponent<"div", any, HTMLAttributes<H
 `;
 
 export const StyledIcon: StyledComponent<"div", any, HTMLAttributes<HTMLDivElement>> = styled.div`
-    width: 80px;
-    height: 80px;
     margin-left: 35px;
     margin-top: 35px;
 `;

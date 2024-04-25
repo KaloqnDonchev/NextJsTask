@@ -50,7 +50,7 @@ export const BulletPoints: React.FC = () => {
         {bulletPoints.map((bulletPoint) => (
           <StyledBulletPointSection key={bulletPoint.title}>
             <StyledIcon>
-              <Image src={bulletPoint.icon} alt={bulletPoint.title}/>
+              <Image src={bulletPoint.icon} width={80} height={80} alt={bulletPoint.title}/>
             </StyledIcon>
             <BulletPointText>
                 <SectionInnerHeading>{bulletPoint.title}</SectionInnerHeading>
