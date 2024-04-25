@@ -1,15 +1,13 @@
+import React from "react";
+
 import { SectionHeading } from "../../components/Typography/SectionHeading";
 import { SectionSubheading } from "../../components/Typography/SectionSubheading";
-import { ImageAndBulletPoints } from "../../collections/Card/ImageAndBulletPoints";
+import ImageAndBulletPoints from "../../collections/Card/ImageAndBulletPoints";
 import { VideoImage } from "../../components/Images/VideoImage";
 import { BackgroundImage } from "../../components/Images/BackgroundImage";
 import { BulletPoints } from "../../collections/Card/BulletPoints";
 
-export const AgencySelection = (props) => {
-    const centeredHeading = {
-        textAlign: "center",
-    }
-
+export const AgencySelection: React.FC = () => {
     return (
         <>
             <SectionHeading>Managed agency selection</SectionHeading>

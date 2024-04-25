@@ -1,7 +1,10 @@
-import styled from "styled-components";
+import styled, { StyledComponent } from "styled-components";
+import { HTMLAttributes } from "react";
 import { StyledBackgroundImage } from "../../components/Images/BackgroundImage/elements";
 
-export const StyledImageAndBulletPoints = styled.div`
+interface StyledImageAndBulletPointsProps extends HTMLAttributes<HTMLDivElement> {}
+
+export const StyledImageAndBulletPoints: StyledComponent<"div", any, StyledImageAndBulletPointsProps> = styled.div`
     @media (max-width: 1024px) {
         justify-content: center;
         align-items: center;
@@ -13,7 +16,7 @@ export const StyledImageAndBulletPoints = styled.div`
     justify-content: center;
 `;
 
-export const StyledBulletPoints = styled((props) => <div {...props} />)`
+export const StyledBulletPoints: StyledComponent<"div", any, HTMLAttributes<HTMLDivElement>> = styled.div`
     @media (max-width: 1024px) {
         justify-content: center;
         align-items: center;
@@ -27,19 +30,19 @@ export const StyledBulletPoints = styled((props) => <div {...props} />)`
     margin-left: 50px;
 `;
 
-export const StyledBulletPointSection = styled((props) => <div {...props} />)`
+export const StyledBulletPointSection: StyledComponent<"div", any, HTMLAttributes<HTMLDivElement>> = styled.div`
     border-radius: 10px;
     background-color: #f0f0f0;
     margin: 20px;
     display: flex;
 `;
 
-export const StyledBulletPointText = styled((props) => <div {...props} />)`
+export const StyledBulletPointText: StyledComponent<"div", any, HTMLAttributes<HTMLDivElement>> = styled.div`
     width: 310px;
     margin-left: 50px;
 `;
 
-export const StyledIcon = styled((props) => <div {...props} />)`
+export const StyledIcon: StyledComponent<"div", any, HTMLAttributes<HTMLDivElement>> = styled.div`
     width: 80px;
     height: 80px;
     margin-left: 35px;
