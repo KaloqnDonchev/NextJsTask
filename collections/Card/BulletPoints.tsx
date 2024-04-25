@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'next/image';
+import styled from "styled-components";
 
 import icon1 from "../../resources/Icons/icon1.png";
 import icon2 from "../../resources/Icons/icon2.png";
@@ -9,6 +10,15 @@ import BulletPointSection from "./BulletPointSection";
 import BulletPointText from "./BulletPointText";
 import { SectionInnerHeading } from "../../components/Typography/SectionInnerHeading"
 import { SectionParagraph } from "../../components/Typography/SectionParagraph";
+
+const StyledBulletPointSection = styled(BulletPointSection)`
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: #3892cf;
+  }
+`;
 
 interface BulletPoint {
   title: string;
@@ -38,7 +48,7 @@ export const BulletPoints: React.FC = () => {
   return (
       <StyledBulletPoints>
         {bulletPoints.map((bulletPoint) => (
-          <BulletPointSection key={bulletPoint.title}>
+          <StyledBulletPointSection key={bulletPoint.title}>
             <StyledIcon>
               <Image src={bulletPoint.icon} alt={bulletPoint.title}/>
             </StyledIcon>
@@ -46,7 +56,7 @@ export const BulletPoints: React.FC = () => {
                 <SectionInnerHeading>{bulletPoint.title}</SectionInnerHeading>
                 <SectionParagraph dangerouslySetInnerHTML={{ __html: bulletPoint.text }} />
             </BulletPointText>
-          </BulletPointSection>
+          </StyledBulletPointSection>
         ))}
       </StyledBulletPoints>
   );
