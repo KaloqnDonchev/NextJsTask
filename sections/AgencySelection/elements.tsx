@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Image, { ImageProps } from "next/image";
+import Image from "next/image";
 import { StyledBackgroundImage } from "../../components/Images/BackgroundImage/elements";
 import videoImg from "../../resources/video.png";
 
@@ -11,7 +11,7 @@ export const StyledImageAndBulletPoints = styled.div`
     justify-content: center;
 `;
 
-export const StyledImage = styled(() => <Image src={videoImg} width={350} height={600} />)`
+export const StyledImage = styled(() => <Image src={videoImg} width={350} height={600} alt={""} />)`
     margin-left: 50px;
 `;
 

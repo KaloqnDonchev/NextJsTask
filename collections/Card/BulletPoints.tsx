@@ -23,7 +23,7 @@ const StyledBulletPointSection = styled(BulletPointSection)`
 interface BulletPoint {
   title: string;
   text: string;
-  icon: StaticImageData;
+  icon: any;
 }
 
 export const BulletPoints: React.FC = () => {
