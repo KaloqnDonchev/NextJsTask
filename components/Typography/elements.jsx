@@ -10,6 +10,12 @@ export const StyledSectionBigHeading = styled(forwardRef((props, ref) => <h1 {..
 `;
 
 export const StyledSectionHeading = styled(forwardRef((props, ref) => <h2 {...props} ref={ref} />))`
+  @media (max-width: 1024px) {
+    width: 120%;
+  }
+  @media (max-width: 560px) {
+    padding-left: 50px;
+  }
   margin-bottom: 0;
   text-align: center;
   font-family: Poppins;
@@ -19,6 +25,12 @@ export const StyledSectionHeading = styled(forwardRef((props, ref) => <h2 {...pr
 `;
 
 export const StyledSectionSubheading = styled(forwardRef((props, ref) => <h3 {...props} ref={ref} />))`
+  @media (max-width: 1024px) {
+    width: 120%;
+  }
+  @media (max-width: 560px) {
+    padding-left: 50px;
+    }
   margin-top: 0;
   margin-bottom: 60px;
   text-align: center;

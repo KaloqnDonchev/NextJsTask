@@ -9,6 +9,10 @@ export const StyledImageAndBulletPoints: StyledComponent<"div", any, StyledImage
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        width: 120%;
+    }
+    @media (max-width: 560px) {
+        padding-left: 50px;
     }
     background-image: url(${StyledBackgroundImage});
     position: relative;
