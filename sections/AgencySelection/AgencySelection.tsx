@@ -1,7 +1,7 @@
 import React from "react";
 
 import { StyledSectionHeading, StyledSectionSubheading } from "./elements";
-import ImageAndBulletPoints from "../../collections/Card/ImageAndBulletPoints";
+import ImageAndBulletPoints from "../../collections/Card/ImageAndBulletPoints/ImageAndBulletPoints";
 
 export const AgencySelection: React.FC = () => {
     return (

@@ -1,8 +1,8 @@
 import React, { HTMLAttributes } from "react";
 import { StyledImageAndBulletPoints } from "./elements";
-import { BackgroundImage } from "../../components/Images/BackgroundImage";
-import { VideoImage } from "../../components/Images/VideoImage";
-import { BulletPoints } from "../../collections/Card/BulletPoints";
+import { BackgroundImage } from "../../../components/Images/BackgroundImage";
+import { VideoImage } from "../../../components/Images/VideoImage";
+import { BulletPoints } from "../BulletPoints/BulletPoints";
 
 interface ImageAndBulletPointsProps extends HTMLAttributes<HTMLDivElement> {}
 
