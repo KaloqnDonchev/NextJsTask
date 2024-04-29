@@ -1,18 +1,25 @@
 import styled from "styled-components";
-import Image from "next/image";
-import { StyledBackgroundImage } from "../../components/Images/BackgroundImage/elements";
-import videoImg from "../../resources/video.png";
+import { SectionHeading, SectionSubheading } from "../../components/Typography";
 
-
-export const StyledImageAndBulletPoints = styled.div`
-    background-image: url(${StyledBackgroundImage});
-    position: relative;
-    display: flex;
-    justify-content: center;
+export const StyledSectionHeading = styled((props) => <SectionHeading {...props} />)`
+    @media (max-width: 1024px) {
+        width: 120%;
+    }
+    @media (max-width: 560px) {
+        padding-left: 50px;
+    }
+    margin-bottom: 0;
+    text-align: center;
 `;
 
-export const StyledImage = styled(() => <Image src={videoImg} width={350} height={600} alt={""} />)`
-    margin-left: 50px;
+export const StyledSectionSubheading = styled((props) => <SectionSubheading {...props} />)`
+    @media (max-width: 1024px) {
+        width: 120%;
+    }
+    @media (max-width: 560px) {
+        padding-left: 50px;
+        }
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-align: center;
 `;
-
-export const StyledBulletPoints = styled(() => <div />)``;

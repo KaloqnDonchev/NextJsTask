@@ -1,6 +1,5 @@
 import styled, { StyledComponent } from "styled-components";
 import { HTMLAttributes } from "react";
-import { StyledBackgroundImage } from "../../components/Images/BackgroundImage/elements";
 
 interface StyledImageAndBulletPointsProps extends HTMLAttributes<HTMLDivElement> {}
 
@@ -14,7 +13,6 @@ export const StyledImageAndBulletPoints: StyledComponent<"div", any, StyledImage
     @media (max-width: 560px) {
         padding-left: 50px;
     }
-    background-image: url(${StyledBackgroundImage});
     position: relative;
     display: flex;
     justify-content: center;
