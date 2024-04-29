@@ -8,7 +8,6 @@ export const StyledBulletPointSection: StyledComponent<"div", any, HTMLAttribute
     display: flex;
     border: 3px solid transparent;
     transition: border-color 0.3s ease;
-  
     &:hover {
       border-color: #3892cf;
     }

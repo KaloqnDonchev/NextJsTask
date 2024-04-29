@@ -52,6 +52,7 @@ export const BulletPoints: React.FC = () => {
             key={bulletPoint.title}
             onMouseEnter={() => handleHover(index)}
             onMouseLeave={handleMouseLeave}
+            style={{ width: `${500 + index * 25}px` }}
           >
             <StyledIcon>
               <Image src={bulletPoint.icon} width={80} height={80} alt={bulletPoint.title}/>

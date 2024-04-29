@@ -11,7 +11,6 @@ export const StyledBulletPoints: StyledComponent<"div", any, HTMLAttributes<HTML
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 600px;
     margin-left: 50px;
 `;
 
