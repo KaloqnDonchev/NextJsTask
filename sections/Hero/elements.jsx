@@ -21,6 +21,9 @@ export const StyledDescription = styled((props) => <SectionSubheading {...props}
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
+  @media (max-width: 1024px) {
+    margin: 0;
+  }
   color: black;
   width: 30%;
   margin-left: 11.125rem;

@@ -1,5 +1,5 @@
 import { StyledImage } from "./elements";
 
-export const VideoImage = ({ ...props }) => {
+export const PortraitImage = ({ ...props }) => {
   return <StyledImage {...props} />;
 };
