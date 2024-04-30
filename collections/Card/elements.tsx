@@ -9,12 +9,12 @@ export const StyledCard: StyledComponent<
   @media (max-width: 1024px) {
     margin: 0 50px;
   }
-  border-radius: 10px;
-  background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-content: center;
   border: 3px solid transparent;
+  border-radius: 10px;
+  background-color: #f5f2f2;
   transition: border-color 0.3s ease;
   &:hover {
     border-color: #3892cf;
@@ -55,7 +55,7 @@ export const StyledIcon: StyledComponent<
   @media (max-width: 1024px) {
     padding: 20px;
   }
-  padding: 40px;
+  padding: 30px;
   display: flex;
   align-items: center;
 `;

@@ -58,7 +58,7 @@ export const StyledCardsWrapper: StyledComponent<
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0;
+    margin: 0 0 40px 0;
   }
   display: flex;
   flex-direction: column;
